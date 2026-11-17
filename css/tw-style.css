@@ -614,3 +614,221 @@
     font-size: 8px;
   }
 }
+
+/* ==========================================
+   TIMBERWOLF — FULL DOSSIER
+   TW-DOSSIER | Version 1.0
+   ========================================== */
+
+.tw-dossier {
+  --dos-accent: #9ba995;
+  --dos-secondary: #c0b9a9;
+  --dos-bg: #111411;
+  --dos-panel: #1b211c;
+  --dos-text: #d0d0c8;
+
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 12px;
+  box-sizing: border-box;
+  background: var(--dos-bg);
+  color: var(--dos-text);
+  border: 1px solid var(--dos-accent);
+  font-family: Georgia, serif;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.tw-dossier *,
+.tw-dossier *::before,
+.tw-dossier *::after {
+  box-sizing: border-box;
+}
+
+.tw-dos-heading {
+  padding: 30px 15px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,.13);
+}
+
+.tw-dos-heading span,
+.tw-dos-label {
+  display: block;
+  color: var(--dos-accent);
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.tw-dos-heading h1 {
+  margin: 10px 0;
+  color: var(--dos-secondary);
+  font-size: clamp(25px, 5vw, 38px);
+  font-weight: normal;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.tw-dos-heading p {
+  margin: 0;
+  font-style: italic;
+  color: var(--dos-secondary);
+}
+
+.tw-dos-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  padding: 16px 8px;
+  border-bottom: 1px solid rgba(255,255,255,.13);
+}
+
+.tw-dos-nav a {
+  color: var(--dos-secondary);
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.tw-dos-nav a:hover {
+  color: var(--dos-accent);
+}
+
+.tw-dos-section {
+  padding: 30px 28px;
+  border-bottom: 1px solid rgba(255,255,255,.10);
+}
+
+.tw-dos-section h2 {
+  margin: 7px 0 22px;
+  color: var(--dos-secondary);
+  font-size: 19px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tw-dos-section p {
+  margin: 0 0 17px;
+  text-align: center;
+}
+
+.tw-dos-intro {
+  max-width: 680px;
+  margin: auto;
+}
+
+.tw-dos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 10px;
+}
+
+.tw-dos-item {
+  padding: 15px;
+  background: var(--dos-panel);
+  border: 1px solid rgba(255,255,255,.09);
+}
+
+.tw-dos-item span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--dos-accent);
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.tw-dos-item strong {
+  color: var(--dos-secondary);
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.tw-dos-divider {
+  margin: 24px 0;
+  text-align: center;
+  color: var(--dos-accent);
+  letter-spacing: 7px;
+}
+
+.tw-dos-family {
+  padding: 17px;
+  margin-bottom: 10px;
+  background: var(--dos-panel);
+  border-left: 2px solid var(--dos-accent);
+}
+
+.tw-dos-family strong {
+  display: block;
+  color: var(--dos-secondary);
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.tw-dos-family p {
+  margin: 0;
+  text-align: left;
+}
+
+.tw-dos-note {
+  padding: 18px;
+  background: var(--dos-panel);
+  border: 1px solid rgba(155,169,149,.3);
+  color: var(--dos-secondary);
+  font-style: italic;
+  text-align: center;
+}
+
+.tw-dos-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7px;
+  margin: 18px 0;
+}
+
+.tw-dos-tags span {
+  padding: 6px 11px;
+  background: var(--dos-panel);
+  border: 1px solid rgba(155,169,149,.3);
+  color: var(--dos-secondary);
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.tw-dos-footer {
+  padding: 22px 10px 12px;
+  color: var(--dos-accent);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  letter-spacing: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  .tw-dossier {
+    padding: 7px;
+  }
+
+  .tw-dos-section {
+    padding: 24px 12px;
+  }
+
+  .tw-dos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tw-dos-nav {
+    gap: 12px;
+  }
+}
